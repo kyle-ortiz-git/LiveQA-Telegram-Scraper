@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <td>${item.id}</td>
                         <td>${item.title}</td>
                         <td style="text-align: center;">${item.date}</td>
-                        <td style="text-align: center;">TEST</td>
                         <td class="audio-cell text-right">
                             <button class="btn btn-sm btn-primary play-btn" data-id="${item.id}">
                                 ▶ Play
