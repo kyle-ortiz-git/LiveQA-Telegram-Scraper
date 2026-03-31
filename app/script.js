@@ -36,16 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 data.results.forEach(item => {
                     const tr = document.createElement("tr");
 
-                    tr.innerHTML = `
-                        <td>${item.id}</td>
-                        <td>${item.title}</td>
-                        <td>${item.date}</td>
-                        <td class="audio-cell text-right">
-                            <button class="btn btn-sm btn-primary play-btn" data-id="${item.id}">
-                                ▶ Play
-                            </button>
-                        </td>
-                    `;
+tr.innerHTML = `
+    <td>${item.id}</td>
+    <td class="question-col">${item.title}</td>
+    <td class="date-col">${item.date}</td>
+    <td class="audio-cell text-right">
+        <button class="btn btn-sm btn-primary play-btn" data-id="${item.id}">
+            ▶ Play
+        </button>
+    </td>
+`;
 
                     resultsBody.appendChild(tr);
                 });
